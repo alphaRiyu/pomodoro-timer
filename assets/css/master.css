@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* timer section */
+
+.pomodoro-section {
+    position: relative;
+    width: 100%;
+    height: 930px;
+    background: linear-gradient(#B5EAEA, #EDF6E5, #FFBCBC);
+    padding: 10px;
+}
+
+.pomodoro-timer-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-options {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-option {
+    width: 100px;
+    padding: 5px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    outline: none !important;
+    border: none;
+    border-radius: 10px;
+    background-color: #F38BA0;
+    transition: all .3s ease-in-out;
+    color: white;
+}
+
+.btn-option:hover {
+    background-color: #EB4264;
+}
+
+.btn-option.active {
+    background-color: #EB4264;
+}
+
+.timer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.timer h3 {
+    font-size: 7rem;
+    font-family: 'Paytone One',
+    sans-serif;
+}
+
+.minute-section,
+.divider-section,
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.minute-section {
+    width: 170px;
+}
+
+.divider-section {
+    width: 50px;
+}
+
+.second-section {
+    width: 170px;
+}
+
+.timer-controls {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-controls i {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.control-btn {
+    width: 100px;
+    padding: 10px 15px;
+    outline: none !important;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B5EAEA, #F38BA0);
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn:hover {
+    background: #F38BA0;
+}
+
+/* adding a task section */
+
+.pomodoro-task-content {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.display-task-pomodoro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.display-task-pomodoro h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.pomodoro-count {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.pomodoro-count h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#pomodoro-counter {
+    margin-left: 20px;
+}
+
+.pomodoro-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.pomodoro-task h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.add-pomodoro-task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+.add-task label {
+    margin: auto 0;
+}
+
+.add-task input {
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    padding: 2px 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 290px;
+    height: 40px;
+    transition: all .2s;
+}
+
+.add-task input:focus {
+    border: 1px solid rgb(0, 174, 255);
+}
+
+.count {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+
+.count button {
+    width: 40px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.count p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+
+.save {
+    background-color: red;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    padding: 5px 15px;
+    width: 130px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    outline: none !important;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B5EAEA, #F38BA0);
+}
+
+.save:hover {
+    background: #F38BA0;
+}
+
+/* customer background */
+
+.custom-shape-divider-bottom-1631700590 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1631700590 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-bottom-1631700590 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+    .timer-options {
+        width: 50%
+    }
+    .pomodoro-task-content {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .timer-options {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .timer-options {
+        width: 30%;
+    }
+}
